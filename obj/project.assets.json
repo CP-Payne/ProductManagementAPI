@@ -5170,24 +5170,32 @@
     ]
   },
   "packageFolders": {
-    "/home/charles/.nuget/packages/": {}
+    "C:\\Users\\Charles\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/charles/codespace/csspace/ProjectManagement/ProjectManagement.csproj",
+      "projectUniqueName": "C:\\Users\\Charles\\Documents\\codespace\\csspace\\ProductManagementAPI\\ProjectManagement.csproj",
       "projectName": "ProjectManagement",
-      "projectPath": "/home/charles/codespace/csspace/ProjectManagement/ProjectManagement.csproj",
-      "packagesPath": "/home/charles/.nuget/packages/",
-      "outputPath": "/home/charles/codespace/csspace/ProjectManagement/obj/",
+      "projectPath": "C:\\Users\\Charles\\Documents\\codespace\\csspace\\ProductManagementAPI\\ProjectManagement.csproj",
+      "packagesPath": "C:\\Users\\Charles\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Charles\\Documents\\codespace\\csspace\\ProductManagementAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/charles/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Charles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5248,12 +5256,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[9.0.2, 9.0.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5262,7 +5264,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
