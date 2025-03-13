@@ -1,5 +1,8 @@
 
-namespace ProjectManagement;
+using Microsoft.EntityFrameworkCore;
+using ProductManagementAPI.Storage;
+
+namespace ProductManagementAPI;
 
 public class Program
 {
@@ -14,6 +17,12 @@ public class Program
 
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+
+        builder.Services.AddDbContext<ApplicationDBContext>(options => {
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+        });
+
         // builder.Services.AddOpenApi();
         var app = builder.Build();
 

@@ -1,28 +1,29 @@
 # Ignore ASP.NET Core files
-bin/
-obj/
-.vs/
-.vscode/
-appsettings*.json
-secrets.json
-*.db
-*.db-journal
-Migrations/
+/bin/
+/obj/
+/.vs/
+/.vscode/
+/appsettings*.json
+/secrets.json
+/*.db
+/*.db-journal
+/Migrations/
 
 # Ignore logs and dependencies for API
-logs/
-*.log
-*.pid
-*.lock
+/logs/
+/*.log
+/*.pid
+/*.lock
 
 # Ignore user-specific IDE/editor files
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln.docstates
+/.idea/
+/.vscode/
+/*.suo
+/*.ntvs*
+/*.njsproj
+/*.sln.docstates
 
 # Ignore system files
-.DS_Store
-Thumbs.db
+/.DS_Store
+/Thumbs.db
+.fake

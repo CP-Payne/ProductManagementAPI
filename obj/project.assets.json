@@ -5176,9 +5176,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Charles\\Documents\\codespace\\csspace\\ProductManagementAPI\\ProjectManagement.csproj",
-      "projectName": "ProjectManagement",
-      "projectPath": "C:\\Users\\Charles\\Documents\\codespace\\csspace\\ProductManagementAPI\\ProjectManagement.csproj",
+      "projectUniqueName": "C:\\Users\\Charles\\Documents\\codespace\\csspace\\ProductManagementAPI\\ProductManagementAPI.csproj",
+      "projectName": "ProductManagementAPI",
+      "projectPath": "C:\\Users\\Charles\\Documents\\codespace\\csspace\\ProductManagementAPI\\ProductManagementAPI.csproj",
       "packagesPath": "C:\\Users\\Charles\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Charles\\Documents\\codespace\\csspace\\ProductManagementAPI\\obj\\",
       "projectStyle": "PackageReference",

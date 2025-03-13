@@ -1,4 +1,4 @@
-namespace ProjectManagement;
+namespace ProductManagementAPI;
 
 public class WeatherForecast
 {
