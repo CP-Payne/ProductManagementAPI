@@ -1,6 +1,9 @@
 
 using Microsoft.EntityFrameworkCore;
+using ProductManagementAPI.Service;
+using ProductManagementAPI.Service.Interfaces;
 using ProductManagementAPI.Storage;
+using ProductManagementAPI.Storage.Repository;
 
 namespace ProductManagementAPI;
 
@@ -19,9 +22,13 @@ public class Program
         builder.Services.AddSwaggerGen();
 
 
-        builder.Services.AddDbContext<ApplicationDBContext>(options => {
+        builder.Services.AddDbContext<ApplicationDBContext>(options =>
+        {
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
         });
+
+        builder.Services.AddScoped<IProductRepository, ProductRepository>();
+        builder.Services.AddScoped<IProductManagementService, ProductManagementService>();
 
         // builder.Services.AddOpenApi();
         var app = builder.Build();

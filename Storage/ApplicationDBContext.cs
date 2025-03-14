@@ -66,6 +66,7 @@ namespace ProductManagementAPI.Storage
                         new Component { Id = 8, Name = "Bicycle Body" },
                         new Component { Id = 9, Name = "Handlebars" },
                         new Component { Id = 10, Name = "Scooter Deck" },
+                        new Component { Id = 11, Name = "Car Body" },
                     }
                 );
 
@@ -74,9 +75,9 @@ namespace ProductManagementAPI.Storage
                 .HasData(
                     new List<ComponentComponent>()
                     {
-                        new ComponentComponent { ParentComponentId = 4, ChildComponentId = 1 },
-                        new ComponentComponent { ParentComponentId = 4, ChildComponentId = 2 },
-                        new ComponentComponent { ParentComponentId = 4, ChildComponentId = 3 },
+                        new ComponentComponent { ParentComponentId = 4, ChildComponentId = 1, Quantity = 2 },
+                        new ComponentComponent { ParentComponentId = 4, ChildComponentId = 2, Quantity = 1 },
+                        new ComponentComponent { ParentComponentId = 4, ChildComponentId = 3, Quantity = 2 },
                     }
                 );
 
@@ -87,6 +88,28 @@ namespace ProductManagementAPI.Storage
                     {
                         new Product { Id = 1, Name = "Bicycle" },
                         new Product { Id = 2, Name = "Scooter" },
+                        new Product { Id = 3, Name = "Toy Car" },
+                    }
+                );
+
+            modelBuilder
+                .Entity<ProductComponent>()
+                .HasData(
+                    new List<ProductComponent>()
+                    {
+                        new ProductComponent
+                        {
+                            ProductId = 3,
+                            ComponentId = 4,
+                            Quantity = 2,
+                        },
+                        new ProductComponent
+                        {
+                            ProductId = 3,
+                            ComponentId = 11,
+                            Quantity = 1,
+                        },
+
                     }
                 );
         }
